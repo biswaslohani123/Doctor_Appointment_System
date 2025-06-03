@@ -51,7 +51,7 @@ const MyProfile = () => {
       }
         </div>
       </div>
-      <p>BASIC INFORMATION</p>
+      <p>BASIC INFORMATIONS</p>
     </div>
   )
 }
