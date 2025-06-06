@@ -8,12 +8,13 @@ const Navbar = () => {
     const {atoken,setAToken} = useContext(AdminContext);
     const navigate = useNavigate()
 
-    const logout = () => {
-        navigate('/')
-        atoken && setAToken('')
-        atoken && localStorage.removeItem('atoken')
-
+     const logout = () => {
+    if (atoken) {
+      localStorage.removeItem('atoken');
+      setAToken('');
     }
+    navigate('/');
+  };
 
   return (
     <div className='flex justify-between items-center px-4 sm:px-10 py-3 border-b bg-white'>
