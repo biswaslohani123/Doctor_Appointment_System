@@ -1,12 +1,15 @@
 import React, { useContext } from 'react'
 import {assets} from '../assets/assets'
 import { AdminContext } from '../context/AdminContext'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
     const {atoken,setAToken} = useContext(AdminContext);
+    const navigate = useNavigate()
 
     const logout = () => {
+        navigate('/')
         atoken && setAToken('')
         atoken && localStorage.removeItem('atoken')
 
