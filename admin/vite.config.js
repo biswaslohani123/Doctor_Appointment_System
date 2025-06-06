@@ -8,5 +8,10 @@ export default defineConfig({
       tailwindcss(),
   ],
    server: {port:5174},
+   extend:{
+    colors:{
+      'primary':"#5F6FFF"
+    }
+   }
   
 })
