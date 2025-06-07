@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { assets } from "../assets/assets";
 import { AppContext } from "../context/AppContext";
 
 const MyProfile = () => {
@@ -17,7 +18,7 @@ const MyProfile = () => {
           <label htmlFor="image">
             <div>
               <img src={image ? URL.createObjectURL(image): userData.image} alt="" />
-              <img src={image ? URL.createObjectURL(image): userData.image}alt="" />
+              <img src={image ? '': assets.upload_icon}alt="" />
             </div>
             <input onChange={(e) => setImage(e.target.files[0])} type="file" id="image" hidden />
           </label>

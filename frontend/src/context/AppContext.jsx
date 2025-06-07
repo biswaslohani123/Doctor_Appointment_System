@@ -10,7 +10,7 @@ const AppContextProvider  = (props) => {
     const currency = "Rs."
     const backendUrl = import.meta.env.VITE_BACKEND_URL
     const [doctors, seDoctors] = useState([])
-    const [token , setToken] = useState(`localStorage.getItem('token')?localStorage.getItem:false`)
+    const [token , setToken] = useState(localStorage.getItem('token') || false);
     const [userData, setUserData] = useState(false)
 
   
