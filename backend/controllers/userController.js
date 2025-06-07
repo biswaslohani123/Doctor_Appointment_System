@@ -63,8 +63,32 @@ const loginUser = async (req, res) => {
         }
     } catch (error) {
         console.log(error.message);
-    res.json({ success: false, message: error.message });
+        res.json({ success: false, message: error.message });
     }
 }
 
-export { registerUser, loginUser };
+// Get User Profile
+
+const getProfile = async (req, res) => {
+
+      try {
+        
+        const { userId } = req.body;
+        const userData = await userModel.findById(userId).select('-password')
+
+        res.json({success:true, userData})
+
+      } catch (error) {
+
+        console.log(error.message);
+        res.json({ success: false, message: error.message });
+
+      }
+}
+
+//To update user Profile
+const updateProfile = async (req, res) => {
+  
+}
+
+export { registerUser, loginUser, getProfile };
