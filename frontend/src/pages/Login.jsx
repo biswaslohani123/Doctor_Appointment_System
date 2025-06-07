@@ -1,57 +1,61 @@
-import { useContext, useEffect, useState } from "react"
-import { AppContext } from "../context/AppContext"
-import axios from "axios"
-import { toast } from "react-toastify"
-import { useNavigate } from "react-router-dom"
+import { useContext, useEffect, useState } from "react";
+import { AppContext } from "../context/AppContext";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const { token, setToken, backendUrl } = useContext(AppContext);
 
-  const navigate = useNavigate()
-  const {token , setToken , backendUrl} = useContext(AppContext)
+  const [state, setState] = useState("SignUp");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
 
-  const [state, setState] = useState("SignUp")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [name, setName] = useState("")
+  //for eye
+  const [visiblePassword, setVisiblePassword] = useState(false);
 
   const onSubmitHandler = async (e) => {
-         e.preventDefault()
+    e.preventDefault();
 
-         try {
-            if (state === 'SignUp') {
-              const {data} = await axios.post(backendUrl + '/api/user/register', {name, password, email})
-              if (data.success) {
-                localStorage.setItem('token', data.token)
-                setToken(data.token)
-                
-              }else{
-                toast.error(data.message)
-              }
-              
-            }else{
-               const {data} = await axios.post(backendUrl + '/api/user/login', { password, email})
-              if (data.success) {
-                localStorage.setItem('token', data.token)
-                setToken(data.token)
-                
-              }else{
-                toast.error(data.message)
-              }
-            }
-         } catch (error) {
-            console.log(error);
-            toast.error(error.message)
-            
-         }
-    
-  }
+    try {
+      if (state === "SignUp") {
+        const { data } = await axios.post(backendUrl + "/api/user/register", {
+          name,
+          password,
+          email,
+        });
+        if (data.success) {
+          localStorage.setItem("token", data.token);
+          setToken(data.token);
+        } else {
+          toast.error(data.message);
+        }
+      } else {
+        const { data } = await axios.post(backendUrl + "/api/user/login", {
+          password,
+          email,
+        });
+        if (data.success) {
+          localStorage.setItem("token", data.token);
+          setToken(data.token);
+        } else {
+          toast.error(data.message);
+        }
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
+  };
 
   useEffect(() => {
-      if (token) {
-        navigate('/')
-        
-      }
-  },[token])
+    if (token) {
+      navigate("/");
+    }
+  }, [token]);
 
   return (
     <div className="flex min-h-screen">
@@ -62,7 +66,8 @@ const Login = () => {
             {state === "SignUp" ? "Create Account" : "Login"}
           </h1>
           <p className="text-gray-600 mb-12">
-            Please {state === "SignUp" ? "create account" : "login"} to book appointment
+            Please {state === "SignUp" ? "create account" : "login"} to book
+            appointment
           </p>
 
           <form onSubmit={onSubmitHandler} className="space-y-8">
@@ -106,7 +111,7 @@ const Login = () => {
 
             <div className="relative">
               <input
-                type="password"
+                type={visiblePassword ? "text" : "password"}
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
                 required
@@ -120,6 +125,14 @@ const Login = () => {
               >
                 PASSWORD
               </label>
+
+              {/* Eye icon for toggle password */}
+              <div
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-400 hover:text-blue-500"
+                onClick={() => setVisiblePassword(!visiblePassword)}
+              >
+                {visiblePassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </div>
             </div>
 
             <button
@@ -131,9 +144,13 @@ const Login = () => {
 
             <div className="text-center pt-4">
               <p className="text-gray-600 text-sm">
-                {state === "SignUp" ? "Already have an account?" : "Don't have an account?"}
+                {state === "SignUp"
+                  ? "Already have an account?"
+                  : "Don't have an account?"}
                 <span
-                  onClick={() => setState(state === "SignUp" ? "Login" : "SignUp")}
+                  onClick={() =>
+                    setState(state === "SignUp" ? "Login" : "SignUp")
+                  }
                   className="ml-2 text-blue-500 cursor-pointer font-semibold hover:text-blue-600 transition-colors tracking-wider"
                 >
                   {state === "SignUp" ? "LOGIN" : "CREATE ACCOUNT"}
@@ -152,11 +169,9 @@ const Login = () => {
         <div className="absolute bottom-32 left-16 w-4 h-8 bg-yellow-400 opacity-60 rounded-sm"></div>
         <div className="absolute bottom-20 right-20 w-0 h-0 border-l-8 border-r-8 border-b-12 border-l-transparent border-r-transparent border-b-red-300 opacity-60"></div>
         <div className="absolute top-32 right-16 w-0 h-0 border-l-6 border-r-6 border-b-10 border-l-transparent border-r-transparent border-b-pink-300 opacity-60"></div>
-
-      
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
