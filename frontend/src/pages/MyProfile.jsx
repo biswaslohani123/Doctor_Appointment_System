@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-
 import { AppContext } from "../context/AppContext";
 
 const MyProfile = () => {
@@ -12,8 +11,7 @@ const MyProfile = () => {
 
   const updateUserProfileData = async () => {};
 
-  return   userData && (
-   
+  return  userData && (
       <div className="max-w-lg flex flex-col gap-2 text-sm">
         {isEdit ? (
           <label htmlFor="image">
