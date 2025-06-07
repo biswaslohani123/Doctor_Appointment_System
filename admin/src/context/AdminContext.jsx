@@ -1,35 +1,50 @@
 import axios from "axios";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
 export const AdminContext = createContext();
 
 const AdminContextProvider = (props) => {
+    const [atoken, setATokenState] = useState(() => localStorage.getItem('atoken') || "");
+    const [doctors, setDoctors] = useState([]);
 
-    const [atoken, setAToken] = useState(() => localStorage.getItem('atoken') || "");
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
-    const [doctors, setDoctors] = useState([])
+    // Custom setter that updates both state and localStorage
+    const setAToken = (token) => {
+        setATokenState(token);
+        if (token) {
+            localStorage.setItem('atoken', token);
+        } else {
+            localStorage.removeItem('atoken');
+        }
+    };
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    
 
     const getAllDoctors = async () => {
-            try {
-
-                const {data} = await axios.post(backendUrl + '/api/admin/doctor-list', {}, {headers:{atoken}})
-                if (data.success) {
-                    setDoctors(data.doctors)
-                    console.log(data.doctors);
-                    
-                     
-                }else{
-                    toast.error(data.message)
-                }
-
-
-            } catch (error) {
-                toast.error(error.message)
+        try {
+            const { data } = await axios.post(
+                backendUrl + '/api/admin/doctor-list', 
+                {}, 
+                { headers: { atoken } }
+            );
+            
+            if (data.success) {
+                setDoctors(data.doctors);
+                console.log(data.doctors);
+            } else {
+                toast.error(data.message);
             }
-    }
+        } catch (error) {
+            toast.error(error.message);
+            
+            // If token is invalid, clear it
+            if (error.response?.status === 401) {
+                setAToken("");
+            }
+        }
+    };
 
     const value = {
         atoken,
@@ -37,14 +52,13 @@ const AdminContextProvider = (props) => {
         backendUrl,
         doctors,
         getAllDoctors
-    }
+    };
 
     return (
         <AdminContext.Provider value={value}>
-        {props.children}
+            {props.children}
         </AdminContext.Provider>
-    )
+    );
+};
 
-}
-
-export default AdminContextProvider
+export default AdminContextProvider;
