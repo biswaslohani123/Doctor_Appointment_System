@@ -80,4 +80,21 @@ const loginAdmin = async (req, res) => {
     }
 }
 
-export {addDoctor,loginAdmin}
+// To get all Doctor List
+
+const AllDoctors = async (req, res) => {
+
+    try {
+
+        //using -password to not get password
+        const doctors = await doctorModel.find({}).select('-password')
+        res.json({success: true, doctors})
+        
+    } catch (error) {
+         console.log(error.message);
+        res.json({success: false, message: error.message})
+    }
+
+}
+
+export {addDoctor,loginAdmin, AllDoctors}
