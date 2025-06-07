@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken'
 
+import jwt from 'jsonwebtoken'
 // User authentication middleware
 const authUser = async (req, res, next) => {
     try {
@@ -20,5 +20,4 @@ const authUser = async (req, res, next) => {
         res.json({success: false, message: error.message})
     }
 }
-
 export default authUser
