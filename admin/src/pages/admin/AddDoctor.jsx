@@ -48,6 +48,15 @@ const AddDoctor = () => {
 
           if (data.success) {
             toast.success(data.message)
+            setDocImg(false);
+            setName("");
+            setPassword("");
+            setEmail("");
+            setAddress1("")
+            setAddress2("")
+            setDegree("")
+            setAbout("")
+            setFees("")
             
           }else{
             toast.error(data.message)
@@ -55,13 +64,11 @@ const AddDoctor = () => {
 
 
          } catch (error) {
-
+            toast.error(error.message);
+            console.log(error);
+            
          }
   }
-
- 
- 
-
   return (
     <form onSubmit={onSubmitHandler} className="m-5 w-full">
       <p className="mb-3 text-lg font-medium">Add Doctor</p>
