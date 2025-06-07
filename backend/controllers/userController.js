@@ -114,5 +114,7 @@ const updateProfile = async (req, res) => {
     }
 };
 
+//book appointment with doctor
+
 
 export { registerUser, loginUser, getProfile, updateProfile };
