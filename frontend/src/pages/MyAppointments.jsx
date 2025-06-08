@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 const MyAppointments = () => {
 
-  const {backendUrl , token } = useContext(AppContext)
+  const {backendUrl , token,  getDoctorsData } = useContext(AppContext)
 
   const [appointments, setAppointments] = useState([])
   const months = [" ","Jan", "feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
@@ -44,6 +44,7 @@ const MyAppointments = () => {
       if (data.success) {
         toast.success(data.message)
         getUserAppointment()
+        getDoctorsData()
         
       }else{
         toast.error(data.message)
