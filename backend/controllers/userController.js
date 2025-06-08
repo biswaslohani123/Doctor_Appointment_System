@@ -6,6 +6,7 @@ import {v2 as cloudinary} from 'cloudinary'
 import doctorModel from "../models/doctorModel.js";
 import appointmentModel from "../models/appointmentModel.js";
 
+
 // Api to register User
 const registerUser = async (req, res) => {
   try {
@@ -226,11 +227,7 @@ const cancelAppointment = async (req, res) => {
     }
 }
 
-//Pay Online Method RazorPay
 
-const paymentRazorpay = async (req, res) => {
-    
-}
 
 
 
