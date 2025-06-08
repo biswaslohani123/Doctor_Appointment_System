@@ -1,0 +1,395 @@
+[33mcommit f139e04cf2b3d868676c5bf93d961e6806846ccf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 20:54:56 2025 +0545
+
+     created appointment Model
+
+[33mcommit 3f80adf97f37dfa1dfe8db5744015f60dba39914[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 20:49:12 2025 +0545
+
+    completed profile
+
+[33mcommit 802162783a1ac21dc00d9fb69fc3ca655c44d6a1[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 19:49:40 2025 +0545
+
+    finally solved bugs
+
+[33mcommit bb46a836cd36833033f157b0689b293dd4a95ef5[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 19:09:10 2025 +0545
+
+    complete
+
+[33mcommit fddd24747b5d3767f9e9fa803e01bcb39575d6ac[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 18:40:40 2025 +0545
+
+    comoleted profile calling
+
+[33mcommit 397c68edfe4f3b42db464fba61bb172a1c235208[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 17:49:40 2025 +0545
+
+    completed backend fro profile
+
+[33mcommit 7a0a609b52660f83bd26cc0676882265e8f78019[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 17:38:25 2025 +0545
+
+    made user middleware  and made get profile controller function
+
+[33mcommit 3547d452a2900b2df640b942762cb45498518c34[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:46:25 2025 +0545
+
+    completed
+
+[33mcommit ac632be25ebfad24bc8d8b52341d8428379a8a01[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:35:13 2025 +0545
+
+    setted visible and unvisible password function
+
+[33mcommit abd6018c67d6a63e70ab938ec1a62eacccaaa7d0[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:30:02 2025 +0545
+
+    completed fully login, register
+
+[33mcommit 39a825cc4949e3d0b2082714130bf15bb479bb72[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:25:07 2025 +0545
+
+    added logout functionality
+
+[33mcommit 9d9938ab9aa9d13a023a35f2d5a8a2b44bad970d[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:23:04 2025 +0545
+
+    completed login , regitser by calling api in frontend
+
+[33mcommit d14c0a79ffc87dd2984bcaa2e8a6cfd2555b4e86[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:15:52 2025 +0545
+
+    completed login user function in userController
+
+[33mcommit 6664a27fed63fce13f972d37a92ad0d987992b07[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 15:00:16 2025 +0545
+
+    completed useRegister by creating cintroller, routes
+
+[33mcommit eb6ed174c55e6874362f3a1bad13cbc49e7f7bdd[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 14:44:20 2025 +0545
+
+    get all doctors from backend fro frontend
+
+[33mcommit c56325f552bab4a25819b92c9a214c5ab3acdd56[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 13:13:53 2025 +0545
+
+    compltedt change available fucntion
+
+[33mcommit aa40d52dd1f831142806eeda0748e502a393f023[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 13:09:39 2025 +0545
+
+    create change avaibility function in backend
+
+[33mcommit 74ee3f3ec704057b3bee1fd969dd81aa19b3405e[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 13:03:58 2025 +0545
+
+    Issued solved
+
+[33mcommit 5265fe6a5744b5c95e1df097d308d917438d6f54[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 13:01:46 2025 +0545
+
+    completed doctor list page
+
+[33mcommit 9c885f4f0afde005cb394bbc92be2e4e9197a41e[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 12:26:52 2025 +0545
+
+    created getting all doctors controller
+
+[33mcommit 4a3c13ff2d782468e6819f202a26c6b478b9a78b[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 12:21:33 2025 +0545
+
+    all doctor added
+
+[33mcommit eb82ff1ef84469040befb0d0b5308fd9484a9190[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat Jun 7 12:09:53 2025 +0545
+
+    completed Add doctor
+
+[33mcommit 797b867cd1f98f3adee7af9ac2acc0c36925a8db[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 21:46:33 2025 +0545
+
+    sucessfully made add doctor for admin
+
+[33mcommit efc3dee4842a84b0821a751f91e3a381163c853e[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 19:19:34 2025 +0545
+
+    completed UI for add doctor page
+
+[33mcommit a94b34c9226dfd828942072d6d3e1f15d6fc5c76[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 18:45:07 2025 +0545
+
+    created SIde Bar for admin
+
+[33mcommit 37a2bb3f23f9d5ed54e5c4830c71fee4b899c78a[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 18:26:55 2025 +0545
+
+    created Navbar and also created Logout feature
+
+[33mcommit 2d453fb830d52478b470609c6eb2efdeb34cba36[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 14:35:01 2025 +0545
+
+    completed login for admin login with calline api
+
+[33mcommit d04cb59d5585e3c9ab424d0484f7349572c9e877[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 13:40:26 2025 +0545
+
+    added tailwind support in admin panel
+
+[33mcommit 564a2f88a8fe95a3a8e79c2bd5879068abb16b4a[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 11:21:35 2025 +0545
+
+    first admin commit
+
+[33mcommit 166e6832cd3ee682cb52a2b5313c841832fa4c2f[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 11:15:55 2025 +0545
+
+    sucessfully created authAdmin middleware
+
+[33mcommit 8e09e05b2c7791a9b60e46d2cb4f3f509a19d6d8[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Fri Jun 6 11:10:06 2025 +0545
+
+    Sucessfully tested login admin and also tested
+
+[33mcommit 7b6d0747fd4fb5b3e15269c28cec4381696dafc1[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 21:39:24 2025 +0545
+
+    sucessfult tested add doctor
+
+[33mcommit 5156baf97d2669cfbec08069bdc7b6709b860021[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 21:30:54 2025 +0545
+
+    completed solving bugs
+
+[33mcommit 025e1cfa480cdf6269d27b3e3468916b49e92713[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 21:21:49 2025 +0545
+
+    completed Add doctor for admin
+
+[33mcommit 7ee5c67adfb53228bf72651f99387acb4b649a81[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 18:02:09 2025 +0545
+
+    started add doctor for admin
+
+[33mcommit 812bf9715deecfb6ca548a4e92026359094c5886[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 17:42:44 2025 +0545
+
+    conpleted userModel
+
+[33mcommit b31b97ae2d14f27410e260b92dae18cbdb7a2df6[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 17:41:53 2025 +0545
+
+    sucessfully created userModel
+
+[33mcommit 7d2c80d0f2c6cefc732da95b5a2cea4c74f1d2ff[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 17:37:06 2025 +0545
+
+    created doctor Model
+
+[33mcommit c04d73d84ca1c8efc5a34f2333c024243f4e2f98[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 17:29:48 2025 +0545
+
+    connect with cloudinary
+
+[33mcommit b209e13333cd9c54abea50900ca93c1b37911eec[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 17:23:09 2025 +0545
+
+    sucessfully connected database
+
+[33mcommit 889102102b29ae7488dbbf99631fba140c0d86fd[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:56:17 2025 +0545
+
+    made port running
+
+[33mcommit 26e1a15dfed6986088735c0a4505db50e5d1f1d9[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:47:13 2025 +0545
+
+    sucessfully installed all dependencies needed for backed
+
+[33mcommit 699ddd5029dfbd994fca5ddbcf292300288578d6[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:43:28 2025 +0545
+
+    backed first commit
+
+[33mcommit 565df6a27858ddf11b096e9e2089d9c5cd9ce722[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:38:31 2025 +0545
+
+    completed responsive section
+
+[33mcommit 256d20a65d312893b630a716f00adaf5d6794483[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:24:39 2025 +0545
+
+    created my-appointment section
+
+[33mcommit eeb157d2a1a7efc17ad4a8a2811b169fad2045f8[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 11:01:19 2025 +0545
+
+    completed profile  page
+
+[33mcommit 85b09ea46c02327e46aedad54c8760b2a0a726ea[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Thu Jun 5 10:34:17 2025 +0545
+
+    mde logic for isedit name
+
+[33mcommit 6cae0a66ed02c3beef88030285ee8bdbd2f26d96[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 21:46:37 2025 +0545
+
+    changed Text
+
+[33mcommit c0e28d98ec57db9147025f824fb4129ee1652438[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 21:40:25 2025 +0545
+
+    half complition of myprofile page
+
+[33mcommit 206802342f3fba7c03e68b48e746ba4d47bc01ba[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 19:14:31 2025 +0545
+
+    completed Login and signUp page
+
+[33mcommit 71bea1ba3b7cf514c78e5ed288d201aa1f96df2f[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 19:01:53 2025 +0545
+
+    made contact US page
+
+[33mcommit b68b0c95096bd5f53fe813b65f906a004c70c29c[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 18:52:29 2025 +0545
+
+    completed AboutUs Page
+
+[33mcommit 50bfaa03a191254ffcc0753f489888f6c9ad60d6[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Tue Jun 3 18:34:23 2025 +0545
+
+    completed Appointment Section
+
+[33mcommit 72727318433fbfb9a0d66fb4e1e3c2794796bfaf[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Mon Jun 2 17:55:58 2025 +0545
+
+    completed half appointemnt page
+
+[33mcommit ba836f2c77d53955d5aba5e36f4a72626281276d[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Mon Jun 2 14:05:05 2025 +0545
+
+    made all doctor section
+
+[33mcommit 1b318b3aa7fe125906d48e556f219a874e40f70c[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Mon Jun 2 13:45:22 2025 +0545
+
+    made Footer Section
+
+[33mcommit 3e4b5960c18542bafa6bad97d17a9e1106ccfce5[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Mon Jun 2 13:26:31 2025 +0545
+
+    created banner section
+
+[33mcommit ec22c2c03d8961b011bbdb5d30e6ac78060784ff[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Mon Jun 2 13:04:26 2025 +0545
+
+    sucessfully created top doctor section
+
+[33mcommit b9c88d0638378ab229ad3e89f10bfdd84aed092e[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sun Jun 1 21:33:54 2025 +0545
+
+    made top doctor section
+
+[33mcommit 2a4b39e1b9ee538c25d018f94e42c015113d4f50[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sun Jun 1 21:17:39 2025 +0545
+
+    completed speciality section
+
+[33mcommit c8e9ae2a76fb47b4330037607e19d6e2a749ff60[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sun Jun 1 21:05:46 2025 +0545
+
+    created Header
+
+[33mcommit 0668a395a8a66f1f704a53718034d63ee2ecaa14[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sun Jun 1 20:49:13 2025 +0545
+
+    navbar
+
+[33mcommit b35006bafe9ad8fabb4bad2365703ea8df497dae[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat May 31 20:19:40 2025 +0545
+
+    completed navbar section
+
+[33mcommit 4a9da5f39f86d248b5c110afdf2f2e9b184c14d8[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat May 31 19:18:31 2025 +0545
+
+    added route
+
+[33mcommit f9c2d6b4ec22e983100c190aea71729f59f15c4b[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat May 31 19:17:23 2025 +0545
+
+    made routes for all pages
+
+[33mcommit 99564dac44ac905299d054fe2bdc7991798226a9[m
+Author: biswasuser <user.lohanibiswas1@gmail.com>
+Date:   Sat May 31 19:07:12 2025 +0545
+
+    first commit
