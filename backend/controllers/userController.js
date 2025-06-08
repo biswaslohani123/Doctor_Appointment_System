@@ -226,6 +226,12 @@ const cancelAppointment = async (req, res) => {
     }
 }
 
+//Pay Online Method RazorPay
+
+const paymentRazorpay = async (req, res) => {
+    
+}
+
 
 
 
