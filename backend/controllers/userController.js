@@ -191,4 +191,4 @@ const listAppointment = async (req, res) => {
 
 
 
-export { registerUser, loginUser, getProfile, updateProfile,bookAppointment };
+export { registerUser, loginUser, getProfile, updateProfile,bookAppointment, listAppointment };
