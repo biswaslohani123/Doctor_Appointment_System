@@ -9,6 +9,8 @@ const AdminContextProvider = (props) => {
     const [doctors, setDoctors] = useState([]);
     const [appointments, setAppointments] = useState([])
 
+    const [dashData, setDashData] = useState(false)
+
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
     // Custom setter that updates both state and localStorage
@@ -99,6 +101,27 @@ const AdminContextProvider = (props) => {
 
     }
 
+    //getting dashboard data
+
+    const getDashData = async () => {
+        try {
+            const {data} = await axios.get(backendUrl
+                 + 'api/admin/admin-dashboard', {headers:{atoken}}
+            )
+            if (data.success) {
+                setDashData(dashData)
+                
+            }else{
+                toast.error(data.message)
+            }
+        } catch (error) {
+            console.log(error);
+            toast.error(error.message)
+            
+            
+        }
+    }
+
     const value = {
         atoken,
         setAToken,
@@ -109,7 +132,8 @@ const AdminContextProvider = (props) => {
         getAllAppointments,
         appointments,
         setAppointments,
-        cancelAppointments
+        cancelAppointments,
+        getDashData
     };
 
     return (
