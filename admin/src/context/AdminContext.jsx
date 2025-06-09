@@ -6,6 +6,7 @@ export const AdminContext = createContext();
 
 const AdminContextProvider = (props) => {
     const [atoken, setATokenState] = useState(() => localStorage.getItem('atoken') || "");
+    
     const [doctors, setDoctors] = useState([]);
     const [appointments, setAppointments] = useState([])
 
