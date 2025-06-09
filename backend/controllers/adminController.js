@@ -164,6 +164,7 @@ const adminDashboard = async (req, res) => {
             latestAppointments: appointments.reverse().slice(0,5)
           
         }
+        res.json({success: true, dashData})
 
 
     } catch (error) {
@@ -173,4 +174,4 @@ const adminDashboard = async (req, res) => {
 }
 
 
-export {addDoctor,loginAdmin, AllDoctors,appointmentAdmin, cancelAppointment}
+export {addDoctor,loginAdmin, AllDoctors,appointmentAdmin, cancelAppointment, adminDashboard}
