@@ -32,31 +32,43 @@ const doctorList = async (req, res) => {
 
 // doctor Login
 const loginDoctor = async (req, res) => {
-    try {
-      const {email, password} = req.body;
-      if (!email ||!password) {
-        const doctor = await doctorModel.findOne({email})
+  try {
+    const { email, password } = req.body;
 
-        if (!doctor) {
-          return res.json({success: false, message: "Doctor Not Found"})
-        }
-
-        const isMatch = await bcrypt.compare(password, doctor.password)
-        if (isMatch) {
-          const token =  jwt.sign({id: doctor._id},process.eventNames.JWT_SECRET )
-          res.json({success: true, token})
-          
-          
-        }else{
-          return res.json({success: false, message: "Invalid Credential;"})
-        }
-        
-        
-      }
-    } catch (error) {
-      console.log(error.message);
-       res.json({ success: false, message: error.message });
+    // Check if both email and password are provided
+    if (!email || !password) {
+      return res.json({ success: false, message: "Email and password are required" });
     }
-}
+
+    const doctor = await doctorModel.findOne({ email });
+
+    if (!doctor) {
+      return res.json({ success: false, message: "Doctor Not Found" });
+    }
+
+    const isMatch = await bcrypt.compare(password, doctor.password);
+
+    if (isMatch) {
+      const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
+
+      res.json({
+        success: true,
+        message: "Login successful",
+        token,
+        doctor: {
+          id: doctor._id,
+          name: doctor.name,
+          available: doctor.available,
+        },
+      });
+    } else {
+      return res.json({ success: false, message: "Invalid Credentials" });
+    }
+  } catch (error) {
+    console.log(error.message);
+    res.json({ success: false, message: error.message });
+  }
+};
+
 
 export { changeAvailability, doctorList, loginDoctor };
