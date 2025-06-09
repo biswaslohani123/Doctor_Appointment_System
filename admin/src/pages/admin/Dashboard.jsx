@@ -4,9 +4,11 @@ import { useContext, useEffect } from "react"
 import { AdminContext } from "../../context/AdminContext"
 import { assets } from "../../assets/assets"
 import { Calendar, X } from "lucide-react"
+import { AppContext } from "../../context/AppContext"
 
 const Dashboard = () => {
   const { dashData, getDashData, atoken, cancelAppointments } = useContext(AdminContext)
+  const {calculateAge} = useContext(AppContext)
 
   useEffect(() => {
     if (atoken) {

@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useContext, useEffect } from "react"
 import { AdminContext } from "../../context/AdminContext"
@@ -126,7 +126,7 @@ const Appointments = () => {
                   </div>
 
                   <div className="flex items-center space-x-1">
-                    <DollarSign className="h-4 w-4 text-green-600" />
+                   
                     <span className="text-sm font-semibold text-green-600">
                       {currency}
                       {item.docData.fees}
@@ -196,7 +196,7 @@ const Appointments = () => {
 
                     <div className="bg-gray-50 rounded-lg p-3">
                       <div className="flex items-center space-x-2 mb-2">
-                        <DollarSign className="h-4 w-4 text-gray-500" />
+                        
                         <span className="text-xs font-medium text-gray-500 uppercase">Fees</span>
                       </div>
                       <p className="text-sm font-semibold text-green-600">
