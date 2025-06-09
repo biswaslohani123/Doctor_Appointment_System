@@ -22,6 +22,10 @@ app.use(cors())
 app.use('/api/admin', adminRouter)
 app.use('/api/doctor', doctorRouter)
 app.use('/api/user', userRouter)
+// Root route to check
+app.get('/', (req, res) => {
+  res.send('Express backend is running on Vercel!');
+});
 
 app.listen(port, () => {
     console.log(`Server started at ${port}`);
