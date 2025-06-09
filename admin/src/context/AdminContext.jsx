@@ -106,10 +106,11 @@ const AdminContextProvider = (props) => {
     const getDashData = async () => {
         try {
             const {data} = await axios.get(backendUrl
-                 + 'api/admin/admin-dashboard', {headers:{atoken}}
+                 + '/api/admin/admin-dashboard', {headers:{atoken}}
             )
             if (data.success) {
-                setDashData(dashData)
+                setDashData(data.dashData)
+                
                 
             }else{
                 toast.error(data.message)
@@ -133,7 +134,8 @@ const AdminContextProvider = (props) => {
         appointments,
         setAppointments,
         cancelAppointments,
-        getDashData
+        getDashData,
+        dashData
     };
 
     return (
